@@ -150,7 +150,6 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 vmap < <gv
 vmap > >gv
 
-
 " ctrl+s to save
 noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
