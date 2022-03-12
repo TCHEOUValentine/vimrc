@@ -25,7 +25,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
 
     " Tags
-    Plug 'ludovicchabant/vim-gutentags'
+    " Plug 'ludovicchabant/vim-gutentags'
 
     " File System Explorer
     Plug 'preservim/nerdtree'
@@ -59,7 +59,9 @@ set encoding=utf8
 
 " Colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme iceberg
+let g:airline_theme='iceberg'
+highlight Normal ctermbg=None
 
 " Cursor
 set cursorline
@@ -140,6 +142,9 @@ command WQ wq
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+" Normal mode from insert mode easier
+inoremap ii <Esc>
+
 " Move current or selected lines using shift+[jk]
 nnoremap <C-j> :m .+1<CR>
 nnoremap <C-k> :m .-2<CR>
@@ -155,7 +160,7 @@ noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
 
 " makefiles options
-autocmd Filetype make setlocal noexpandtab
+"autocmd Filetype make setlocal noexpandtab
 
 " Destroy all trailing spaces on save
 autocmd BufWritePre * %s/\s\+$//e
@@ -176,8 +181,8 @@ nnoremap <Leader>gc :Git commit<CR>i
 "
 
 " prevent the plugin from creating tags files at the root directories of your projects
-let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
-let g:gutentags_project_root = ['Makefile']
+" let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+" let g:gutentags_project_root = ['Makefile']
 
 
 "
@@ -233,10 +238,6 @@ map <F4> :AcpDisable<CR>
 
 " Enter to select in completion menu
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" Completion menu navigation
-inoremap <expr> <C-j> pumvisible() ? "" <C-n>" :"<Down>"
-inoremap <expr> <C-k> pumvisible() ? "<C-p>" :"<Up>"
 
 
 "
