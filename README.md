@@ -1,5 +1,7 @@
 # My Vim config
 
+![](screenshot.png)
+
 ## Included Plugins
 I used `Vim-plug` to manage the plugins. 
 
