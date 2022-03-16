@@ -22,59 +22,59 @@ I used `Vim-plug` to manage the plugins.
 ## Key Mappings
 I set the `Leader key` to `Space`.
 
-`Ctrl+h`: go to the left split
+`Ctrl+h` go to the left split
 ```
 map <C-h> <C-w>h 
 ```
 
-`Ctrl+l`: go to the right split
+`Ctrl+l` go to the right split
 ```
 map <C-l> <C-w>l 
 ```
 
-`ii`: Normal mode from Insert mode faster
+`ii` Normal mode from Insert mode faster
 ```
 inoremap ii <Esc>
 ```
 
-`Ctrl+j`: move down current or selected line(s)
+`Ctrl+j` move down current or selected line(s)
 ```
 nnoremap <C-j> :m .+1<CR>
 vnoremap <C-j> :m '>+1<CR>gv=gv
 ```
 
-`Ctrl+k`: move up current or selected line(s)
+`Ctrl+k` move up current or selected line(s)
 ```
 nnoremap <C-k> :m .-2<CR>
 vnoremap <C-k> :m '<-2<CR>gv=gv
 ```
 
-`Ctrl+s`: save the current file
+`Ctrl+s` save the current file
 ```
 noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
 ```
 
-`Ctrl+f`: Toggle NerdTree 
+`Ctrl+f` Toggle NerdTree 
 ```
 nnoremap <C-f> :NERDTreeToggle<CR>
 ```
 
 ## Other cool things I use a lot when I code
-`s`: in NerdTree, open the selected file in a new split
+`s` in NerdTree, open the selected file in a new split
 
-`:vs`: in Normal mode, the current file in a new split (helpful when editing a long file)
+`:vs` in Normal mode, the current file in a new split (helpful when editing a long file)
 
-`Ctrl+wr`: in Normal mode, rotate the split rightward
+`Ctrl+wr` in Normal mode, rotate the split rightward
 
-`Leader+cc`: comment the current or selected line(s)
+`Leader+cc` comment the current or selected line(s)
 
-`Leader+cu`: uncomment the current or selected line(s)
+`Leader+cu` uncomment the current or selected line(s)
 
-`<`: indent to the left the current or selected line(s)
+`<` indent to the left the current or selected line(s)
 
-`>`: indent to the right the current or selected line(s)
+`>` indent to the right the current or selected line(s)
 
-`Ctrl+p`: in code completion menu, select the previous entry
+`Ctrl+p` in code completion menu, select the previous entry
 
-`Ctrl+n`: in code completion menu, select the next entry
+`Ctrl+n` in code completion menu, select the next entry
