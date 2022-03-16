@@ -65,7 +65,7 @@ nnoremap <C-f> :NERDTreeToggle<CR>
 ## Other cool things I use a lot when I code
 `s` in NerdTree, open the selected file in a new split
 
-`:vs` in Normal mode, the current file in a new split (helpful when editing a long file)
+`:vs` in Normal mode, open the current file in a new split (helpful when editing a long file)
 
 `Ctrl+wr` in Normal mode, rotate the split rightward
 
