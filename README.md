@@ -1,4 +1,4 @@
-# My Vim config
+# Tyzlo's Vim config
 
 ![](screenshot.png)
 
