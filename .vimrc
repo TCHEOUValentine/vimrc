@@ -24,9 +24,6 @@ call plug#begin('~/.vim/plugged')
     " Git commands in vim but better
     Plug 'tpope/vim-fugitive'
 
-    " Tags
-    " Plug 'ludovicchabant/vim-gutentags'
-
     " File System Explorer
     Plug 'preservim/nerdtree'
 
@@ -159,9 +156,6 @@ vmap > >gv
 noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
 
-" makefiles options
-"autocmd Filetype make setlocal noexpandtab
-
 " Destroy all trailing spaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -174,15 +168,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 nnoremap <Leader>ga :Git add %<CR>
 nnoremap <Leader>gc :Git commit<CR>i
-
-
-"
-" GUTENTAGS
-"
-
-" prevent the plugin from creating tags files at the root directories of your projects
-" let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
-" let g:gutentags_project_root = ['Makefile']
 
 
 "
