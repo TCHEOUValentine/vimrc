@@ -1,5 +1,4 @@
-# Tyzlo's Vim config
-This is my new vimrc, I hope you will like it.
+# My Vim config
 
 ## Included Plugins
 I used `Vim-plug` to manage the plugins. 
