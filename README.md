@@ -1,4 +1,5 @@
 # Tyzlo's Vim config
+This is the new vimrc I wrote for my new virtual machine, I hope you will like it!
 
 ![](screenshot.png)
 
