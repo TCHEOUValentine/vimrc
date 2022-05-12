@@ -14,8 +14,7 @@ I used `Vim-plug` to manage the plugins.
 - [AutoComplPop](https://github.com/vim-scripts/AutoComplPop): automatically open the code completion menu
 - [ultisnips](https://github.com/SirVer/ultisnips): snipets for vim
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs): insert or delete brackets, parenthesis and quotes in pair
-- [Syntastic](https://github.com/vim-syntastic/syntastic): syntax checking and
-  error dysplay
+- [Syntastic](https://github.com/vim-syntastic/syntastic): syntax checking and error display
 - [vim-man](https://github.com/vim-utils/vim-man): open man pages in vim
 
 ## Included color schemes
