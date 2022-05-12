@@ -4,16 +4,18 @@ This is the new vimrc I wrote for my new virtual machine, I hope you will like i
 ![](screenshot.png)
 
 ## Included Plugins
-I used `Vim-plug` to manage the plugins. 
+I used `Vim-plug` to manage the plugins.
 
-- [vim-airline](https://github.com/vim-airline/vim-airline): add a status line at the bottom
+- [vim-airline](https://github.com/vim-airline/vim-airline): status line at the bottom
 - [vim-airline-theme](https://github.com/vim-airline/vim-airline-themes): add theme for the airline
 - [vim-fugitive](https://github.com/tpope/vim-fugitive): better git commands in vim (quiet commands)
 - [nerdtree](https://github.com/preservim/nerdtree): file system explorer
 - [nerdcommenter](https://github.com/preservim/nerdcommenter): fast commenting
-- [AutoComplPop](https://github.com/vim-scripts/AutoComplPop): automatically open the code completion menu 
+- [AutoComplPop](https://github.com/vim-scripts/AutoComplPop): automatically open the code completion menu
 - [ultisnips](https://github.com/SirVer/ultisnips): snipets for vim
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs): insert or delete brackets, parenthesis and quotes in pair
+- [Syntastic](https://github.com/vim-syntastic/syntastic): syntax checking and
+  error dysplay
 - [vim-man](https://github.com/vim-utils/vim-man): open man pages in vim
 
 ## Included color schemes
@@ -26,12 +28,24 @@ I set the `Leader key` to `Space`.
 
 `Ctrl+h` go to the left split
 ```
-map <C-h> <C-w>h 
+map <C-h> <C-w>h
 ```
 
 `Ctrl+l` go to the right split
 ```
-map <C-l> <C-w>l 
+map <C-l> <C-w>l
+```
+
+`Ctrl+d` create a vertical split
+```
+noremap <C-D> :vs<CR>
+inoremap <C-D> <Esc>:vs<CR><C-D>
+```
+
+`Ctrl+t` create a new tab
+```
+noremap <C-T> :tabnew<CR>
+inoremap <C-T> <Esc>:tabnew<CR>
 ```
 
 `ii` Normal mode from Insert mode faster
@@ -51,13 +65,24 @@ nnoremap <C-k> :m .-2<CR>
 vnoremap <C-k> :m '<-2<CR>gv=gv
 ```
 
+`Ctrl+i` fix the indent in the whole file
+```
+noremap <C-I> gg=G
+```
+
 `Ctrl+s` save the current file
 ```
 noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
 ```
 
-`Ctrl+f` Toggle NerdTree 
+`Ctrl+x` quit the current file
+```
+noremap <C-X> :q<CR>
+inoremap <C-X> <Esc>:q<CR>
+```
+
+`Ctrl+f` Toggle NerdTree
 ```
 nnoremap <C-f> :NERDTreeToggle<CR>
 ```

@@ -40,6 +40,9 @@ call plug#begin('~/.vim/plugged')
     " Auto pairs
     Plug 'jiangmiao/auto-pairs'
 
+    " Syntax checking
+    Plug 'vim-syntastic/syntastic'
+
     " Man pages in Vim
     Plug 'vim-utils/vim-man'
 
@@ -93,7 +96,10 @@ set scrolloff=5
 " fix splitting
 set splitbelow splitright
 
-"Paste
+" resize split automatically
+autocmd VimResized * wincmd =
+
+" Paste enabled
 set pastetoggle=<F6>
 
 
@@ -143,6 +149,14 @@ command WQ wq
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+" Create a vertical Split
+noremap <C-D> :vs<CR>
+inoremap <C-D> <Esc>:vs<CR><C-D>
+
+" Create a new tab
+noremap <C-T> :tabnew<CR>
+inoremap <C-T> <Esc>:tabnew<CR>
+
 " Normal mode from insert mode easier
 inoremap ii <Esc>
 
@@ -152,13 +166,24 @@ nnoremap <C-k> :m .-2<CR>
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
-" Fix indenting visual block
+" Fix indent in the whole file
+noremap <C-I> gg=G
+
+"Easier indent
+noremap < <<Space>
+noremap > ><Space>
+
+"Fix indenting visual block
 vmap < <gv
 vmap > >gv
 
 " ctrl+s to save
 noremap <C-S> :w<CR>
 inoremap <C-S> <Esc>:w<CR>
+
+" ctrl+x to quit
+noremap <C-X> :q<CR>
+inoremap <C-X> <Esc>:q<CR>
 
 " Destroy all trailing spaces on save
 autocmd BufWritePre * %s/\s\+$//e
