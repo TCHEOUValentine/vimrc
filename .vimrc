@@ -11,6 +11,8 @@ filetype plugin on
 
 " Directory for plugins
 call plug#begin('~/.vim/plugged')
+    " My colorscheme and airline theme :3
+    Plug 'TCHEOUValentine/raisen'
 
     " Colorschemes
     Plug 'morhetz/gruvbox'
@@ -53,14 +55,15 @@ call plug#end()
 
 "==>==<==>==<==>==<==>==<==>==<==>==<VISUAL>==<==>==<==>==<==>==<==>==<==>==<==
 
-"Syntax
+" Syntax
 syntax on
 set encoding=utf8
 
 " Colorscheme
 set background=dark
-colorscheme iceberg
-let g:airline_theme='iceberg'
+colorscheme raisen
+let g:airline_theme='raisen'
+set termguicolors
 highlight Normal ctermbg=None
 
 " Cursor
@@ -84,7 +87,7 @@ set relativenumber
 " Limit line length
 set textwidth=80
 set colorcolumn=80
-highlight ColorColumn ctermbg=gray guibg=green
+highlight ColorColumn ctermbg=gray guibg=gray
 
 " Keep 5 lines below and above the cursor
 set scrolloff=5
