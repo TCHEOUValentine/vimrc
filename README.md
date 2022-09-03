@@ -35,10 +35,10 @@ map <C-h> <C-w>h
 map <C-l> <C-w>l
 ```
 
-`Ctrl+d` create a vertical split
+`Ctrl+m` create a vertical split
 ```
-noremap <C-D> :vs<CR>
-inoremap <C-D> <Esc>:vs<CR><C-D>
+noremap <C-M> :vs<CR>
+inoremap <C-M> <Esc>:vs<CR><C-M>
 ```
 
 `Ctrl+t` create a new tab
@@ -89,7 +89,15 @@ nnoremap <C-f> :NERDTreeToggle<CR>
 ## Other cool things I use a lot when I code
 `s` in NerdTree, open the selected file in a new split
 
-`:vs` in Normal mode, open the current file in a new split (helpful when editing a long file)
+`r` in NerdTree, refresh the tree
+
+`g;` go to the last position where something has been edited
+
+`zz` in Normal mode, place the cursor at the middle of the screen
+
+`Ctrl+d` in Normal mode jump half a page down
+
+`Ctrl+u` in Normal mode, jummp half a page up
 
 `Ctrl+wr` in Normal mode, rotate the split rightward
 

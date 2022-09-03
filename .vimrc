@@ -94,7 +94,6 @@ set scrolloff=5
 
 " Show matching parenthesis
 set showmatch
-set scrolloff=5
 
 " fix splitting
 set splitbelow splitright
@@ -148,13 +147,17 @@ command W w
 command Q q
 command WQ wq
 
-" Easier split navigation
+" File Navigation
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+"Easier split navigation
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
 " Create a vertical Split
-noremap <C-D> :vs<CR>
-inoremap <C-D> <Esc>:vs<CR><C-D>
+noremap <C-M> :vs<CR>
+inoremap <C-M> <Esc>:vs<CR><C-M>
 
 " Create a new tab
 noremap <C-T> :tabnew<CR>
