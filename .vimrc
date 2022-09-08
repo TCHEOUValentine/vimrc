@@ -48,8 +48,10 @@ call plug#begin('~/.vim/plugged')
     " Man pages in Vim
     Plug 'vim-utils/vim-man'
 
+    " Color Preview
+    Plug 'ap/vim-css-color'
 
-" Initialize plugin system
+    " Initialize plugin system
 call plug#end()
 
 

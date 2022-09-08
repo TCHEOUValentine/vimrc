@@ -16,6 +16,7 @@ I used `Vim-plug` to manage the plugins.
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs): insert or delete brackets, parenthesis and quotes in pair
 - [Syntastic](https://github.com/vim-syntastic/syntastic): syntax checking and error display
 - [vim-man](https://github.com/vim-utils/vim-man): open man pages in vim
+- [vim-css-colors](https://github.com/ap/vim-css-color): color preview
 
 ## Included color schemes
 - [gruvbox](https://github.com/morhetz/gruvbox)
