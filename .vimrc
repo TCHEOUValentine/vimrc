@@ -12,8 +12,9 @@ filetype plugin on
 
 " Directory for plugins
 call plug#begin('~/.vim/plugged')
-    " My colorscheme and airline theme :3
+    " My colorschemes and airline themes :3
     Plug 'TCHEOUValentine/raisen'
+    Plug 'TCHEOUValentine/coffeebean'
 
     " Colorschemes
     Plug 'morhetz/gruvbox'
