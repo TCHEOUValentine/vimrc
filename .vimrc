@@ -7,6 +7,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Enable plugins
 filetype plugin on
 
 " Directory for plugins
@@ -103,9 +104,6 @@ set splitbelow splitright
 " resize split automatically
 autocmd VimResized * wincmd =
 
-" Paste enabled
-set pastetoggle=<F6>
-
 
 "==>==<==>==<==>==<==>==<==>==<==>==<OTHER>==<==>==<==>==<==>==<==>==<==>==<==>
 
@@ -195,6 +193,9 @@ inoremap <C-X> <Esc>:q<CR>
 
 " Destroy all trailing spaces on save
 autocmd BufWritePre * %s/\s\+$//e
+
+" Paste enabled
+set pastetoggle=<F6>
 
 
 "==>==<==>==<==>==<==>==<==>==<==>PLUGIN CONF<==>==<==>==<==>==<==>==<==>==<==>
